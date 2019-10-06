@@ -1,11 +1,12 @@
+'use strict';
 const { PAGAMENTOs } = require('../models');
 
     function listar(req, res) {
         PAGAMENTOs.findAll().then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -15,10 +16,10 @@ const { PAGAMENTOs } = require('../models');
                 id: req.params.id
             }
         }).then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -32,10 +33,10 @@ const { PAGAMENTOs } = require('../models');
             id_usuario: req.body.id_usuario,
             id_taxa: req.body.id_taxa
         }).then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -54,10 +55,10 @@ const { PAGAMENTOs } = require('../models');
                 id: req.params.id
             }
         }).then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -67,10 +68,10 @@ const { PAGAMENTOs } = require('../models');
                 id: req.params.id
             }
         }).then((resultado) => {
-           res.sendStatus(200) 
+           res.sendStatus(200);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 

@@ -1,11 +1,12 @@
+'use strict';
 const { USUARIOs } = require('../models');
 
     function listar(req, res) {
         USUARIOs.findAll().then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -15,10 +16,10 @@ const { USUARIOs } = require('../models');
                 email: req.params.email
             }
         }).then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -30,10 +31,10 @@ const { USUARIOs } = require('../models');
             datacadastro: req.body.datacadastro,
             id_empreendimento: req.body.id_empreendimento
         }).then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -50,10 +51,10 @@ const { USUARIOs } = require('../models');
                 email: req.params.email
             }
         }).then((resultado) => {
-            res.json(resultado)
+            res.json(resultado);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 
@@ -63,10 +64,10 @@ const { USUARIOs } = require('../models');
                 email: req.params.email
             }
         }).then((resultado) => {
-           res.sendStatus(200) 
+           res.sendStatus(200);
         }).catch((err) => {
-            console.log(err)
-            res.sendStatus(500)
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 

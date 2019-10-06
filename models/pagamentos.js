@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     id_taxa: DataTypes.INTEGER
   }, {});
   Pagamento.associate = function(models) {
-    Pagamento.belongsTo(models.USUARIOs, {foreignKey: 'id_usuario'})
-    Pagamento.belongsTo(models.TAXAs, {foreignKey: 'id_taxa'})
+    Pagamento.belongsTo(models.USUARIOs, {foreignKey: 'id_usuario'});
+    Pagamento.belongsTo(models.TAXAs, {foreignKey: 'id_taxa'});
   };
   return Pagamento;
 };

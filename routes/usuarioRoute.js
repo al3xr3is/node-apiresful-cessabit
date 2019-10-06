@@ -1,3 +1,4 @@
+'use strict';
 const express = require('express');
 const routes = express.Router();
 const usuarioController = require('../controller/usuarioController');

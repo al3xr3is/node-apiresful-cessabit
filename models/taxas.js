@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     descricao: DataTypes.STRING
   }, {});
   Taxa.associate = function(models) {
-    Taxa.hasMany(models.PAGAMENTOs, {foreignKey: 'id_taxa'})
+    Taxa.hasMany(models.PAGAMENTOs, {foreignKey: 'id_taxa'});
   };
   return Taxa;
 };

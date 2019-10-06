@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     apartamento: DataTypes.CHAR
   }, {});
   EMPREENDIMENTO.associate = function(models) {
-    EMPREENDIMENTO.hasOne(models.USUARIOs, {foreignKey: 'id_empreendimento'})
+    EMPREENDIMENTO.hasOne(models.USUARIOs, {foreignKey: 'id_empreendimento'});
   };
   return EMPREENDIMENTO;
 };
