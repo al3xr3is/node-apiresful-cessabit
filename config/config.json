@@ -7,10 +7,10 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "cessabit",
-    "password": "wacgr12345",
-    "database": "admcondominio",
-    "host": "18.228.218.44",
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
     "dialect": "mysql"
   },
   "production": {
