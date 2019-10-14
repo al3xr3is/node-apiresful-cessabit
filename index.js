@@ -23,6 +23,6 @@ app.use('/taxas', rota_taxa);
 app.use('/pagamentos', rota_pagamento);
 
 //Criando conexão ao servidor http
-app.listen(5000, () => {
+app.listen(3333, () => {
     console.log('servidor conectado');
 });

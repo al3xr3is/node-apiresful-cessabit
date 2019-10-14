@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     cpf: DataTypes.STRING,
     datacadastro: DataTypes.DATEONLY,
     id_empreendimento: DataTypes.INTEGER,
-    nivelacesso: DataTypes.ENUM
+    nivelacesso: DataTypes.ENUM('desativado', 'cliente', 'moderador', 'adm', 'root')
   }, {});
   Usuario.associate = function(models) {
     Usuario.belongsTo(models.EMPREENDIMENTOs, {foreignKey: 'id_empreendimento'});
