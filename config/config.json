@@ -10,7 +10,7 @@
     "username": "cessabit",
     "password": "wacgr12345",
     "database": "admcondominio",
-    "host": "18.218.228.44",
+    "host": "18.228.218.44",
     "dialect": "mysql"
   },
   "production": {

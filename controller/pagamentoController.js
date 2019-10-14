@@ -1,5 +1,7 @@
 'use strict';
 const { PAGAMENTOs } = require('../models');
+const { TAXAs } = require('../models');
+const { USUARIOs} = require('../models');
 
     function listar(req, res) {
         PAGAMENTOs.findAll().then((resultado) => {
@@ -7,6 +9,16 @@ const { PAGAMENTOs } = require('../models');
         }).catch((err) => {
             console.log(err);
             res.sendStatus(500);
+        })
+    }
+
+    function balancoAnual(req, res) {
+        PAGAMENTOs.findAll({
+            include: [{model: TAXAs}, {model: USUARIOs}]
+        }).then((resultado) => {
+            res.json(resultado);
+        }).catch((err) => {
+            console.log(err)
         })
     }
 
@@ -75,4 +87,4 @@ const { PAGAMENTOs } = require('../models');
         })
     }
 
-module.exports = { listar, filtrar, criar, atualizar, excluir }
+module.exports = { listar, balancoAnual, filtrar, criar, atualizar, excluir }

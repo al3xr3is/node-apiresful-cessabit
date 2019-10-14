@@ -5,6 +5,7 @@ const routes = express.Router();
 const pagamentoController = require('../controller/pagamentoController');
 
 routes.get('/', pagamentoController.listar);
+routes.get('/balancoAnual', pagamentoController.balancoAnual);
 routes.get('/:id', pagamentoController.filtrar);
 routes.post('/', pagamentoController.criar);
 routes.put('/:id', pagamentoController.atualizar);
